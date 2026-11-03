@@ -1,0 +1,10 @@
+{
+  "description": "Explore Neha Suresh Chavan’s AI and full-stack development portfolio, showcasing professional experience, projects, technical skills, education, and contact options for recruiters and collaborators.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
