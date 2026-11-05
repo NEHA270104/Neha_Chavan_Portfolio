@@ -1,9 +1,6 @@
 import { ReactNode, useEffect, useState } from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
-<<<<<<< HEAD
 import resumeUrl from "./assets/Neha-Suresh-Chavan-Resume.pdf?url"
-=======
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 
 type IconName = "arrow" | "briefcase" | "code" | "database" | "download" | "external" | "github" | "linkedin" | "mail" | "map" | "menu" | "phone" | "send" | "spark" | "user" | "x"
 
@@ -156,10 +153,7 @@ const smallerProjects = [
       "Responsive business website showcasing construction services, completed projects, and company information.",
     url: "https://anaadhiconstruuction.in/",
     tag: "Construction",
-<<<<<<< HEAD
     logo: "/anaadhi-logo.webp",
-=======
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
   },
   {
     title: "Avadhut Construction",
@@ -167,17 +161,7 @@ const smallerProjects = [
       "Responsive corporate website with structured layouts, mobile navigation, and clear business information.",
     url: "https://avadhutconstruction.in/",
     tag: "Corporate",
-<<<<<<< HEAD
     logo: "/avadhut-logo.webp",
-=======
-  },
-  {
-    title: "Sai Infra Signs",
-    description:
-      "Independently designed and deployed business website with contact forms and production hosting.",
-    url: "https://saiinfrasigns.com/",
-    tag: "Design & Deployment",
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
   },
 ]
 
@@ -290,18 +274,6 @@ function Icon({ name, size = 18 }: { name: IconName; size?: number }) {
   )
 }
 
-<<<<<<< HEAD
-=======
-function Logo() {
-  return (
-    <a className="logo" href="#home" aria-label="Neha Suresh Chavan, home">
-      <span>NS</span>
-      <i>C</i>
-    </a>
-  )
-}
-
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 function SectionTitle({
   eyebrow,
   title,
@@ -322,64 +294,11 @@ function SectionTitle({
     </div>
   )
 }
-<<<<<<< HEAD
-=======
-function ProjectVisual({ theme, title }: { theme: string; title: string }) {
-  return (
-    <div
-      className={`project-visual ${theme}`}
-      aria-label={`${title} interface mockup`}
-    >
-      <div className="mock-browser">
-        <div className="mock-top">
-          <span />
-          <span />
-          <span />
-          <i />
-        </div>
-        <div className="mock-body">
-          <div className="mock-side">
-            <b />
-            <b />
-            <b />
-            <b />
-          </div>
-          <div className="mock-main">
-            <div className="mock-heading">
-              <span />
-              <i />
-            </div>
-            <div className="mock-stats">
-              <b />
-              <b />
-              <b />
-            </div>
-            <div className="mock-chart">
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="visual-label">Product interface / {theme}</div>
-    </div>
-  )
-}
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [active, setActive] = useState("home")
   const [scrolled, setScrolled] = useState(false)
-<<<<<<< HEAD
-=======
-  const [selectedProject, setSelectedProject] =
-    useState<typeof projects[number] | null>(null)
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 
   useEffect(() => {
     const onScroll = () => {
@@ -412,19 +331,11 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-<<<<<<< HEAD
     document.body.style.overflow = menuOpen ? "hidden" : ""
     return () => {
       document.body.style.overflow = ""
     }
   }, [menuOpen])
-=======
-    document.body.style.overflow = selectedProject || menuOpen ? "hidden" : ""
-    return () => {
-      document.body.style.overflow = ""
-    }
-  }, [selectedProject, menuOpen])
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 
   const closeMenu = () => setMenuOpen(false)
 
@@ -433,26 +344,15 @@ export default function App() {
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <nav className="nav-wrap" aria-label="Main navigation">
           <div className="nav-brand">
-<<<<<<< HEAD
             <span>
               <b>Neha Suresh Chavan</b>
-=======
-            <Logo />
-            <span>
-              <b>Neha Suresh</b>
-              <small>Chavan</small>
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             </span>
           </div>
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
             <div className="mobile-nav-head">
-<<<<<<< HEAD
               <a className="mobile-brand" href="#home" onClick={closeMenu}>
                 Neha Suresh Chavan
               </a>
-=======
-              <Logo />
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
               <button
                 className="icon-button"
                 onClick={closeMenu}
@@ -474,15 +374,10 @@ export default function App() {
             ))}
             <a
               className="button primary mobile-resume"
-<<<<<<< HEAD
               href={resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               download="Neha-Suresh-Chavan-Resume.pdf"
-=======
-              href="/neha-suresh-chavan-resume.txt"
-              download
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             >
               <Icon name="download" /> Download Resume
             </a>
@@ -490,15 +385,10 @@ export default function App() {
           <div className="nav-actions">
             <a
               className="button compact secondary nav-resume"
-<<<<<<< HEAD
               href={resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               download="Neha-Suresh-Chavan-Resume.pdf"
-=======
-              href="/neha-suresh-chavan-resume.txt"
-              download
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             >
               <Icon name="download" size={16} /> Download Resume
             </a>
@@ -549,15 +439,10 @@ export default function App() {
                 </a>
                 <a
                   className="button secondary"
-<<<<<<< HEAD
                   href={resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   download="Neha-Suresh-Chavan-Resume.pdf"
-=======
-                  href="/neha-suresh-chavan-resume.txt"
-                  download
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                 >
                   <Icon name="download" /> Download Resume
                 </a>
@@ -680,11 +565,7 @@ export default function App() {
               </linearGradient>
               <linearGradient id="waveLine" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0" stopColor="#8b5cf6" stopOpacity=".2" />
-<<<<<<< HEAD
                 <stop offset=".55" stopColor="#d946ef" stopOpacity=".78" />
-=======
-                <stop offset=".55" stopColor="#d946ef" stopOpacity=".85" />
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                 <stop offset="1" stopColor="#8b5cf6" stopOpacity=".3" />
               </linearGradient>
             </defs>
@@ -858,7 +739,6 @@ export default function App() {
               title="Products designed for real-world use."
               copy="A collection of applications and digital products I've contributed to building."
             />
-<<<<<<< HEAD
             <div className="projects-marquee">
               <div className="projects-list">
                 {[...projects, ...projects].map((project, index) => {
@@ -909,53 +789,6 @@ export default function App() {
                   )
                 })}
               </div>
-=======
-            <div className="projects-list">
-              {projects.map((project, index) => (
-                <article className="project-card reveal" key={project.title}>
-                  <ProjectVisual theme={project.theme} title={project.title} />
-                  <div className="project-content">
-                    <div className="project-number">
-                      PROJECT / {project.number}
-                    </div>
-                    <p className="project-category">{project.category}</p>
-                    <h3>{project.title}</h3>
-                    <p className="project-description">{project.description}</p>
-                    <ul>
-                      {project.features.map((feature) => (
-                        <li key={feature}>
-                          <span />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="stack-list">
-                      {project.stack.map((tech) => (
-                        <span key={tech}>{tech}</span>
-                      ))}
-                    </div>
-                    <div className="project-actions">
-                      {project.url && (
-                        <a
-                          className="button small primary"
-                          target="_blank"
-                          rel="noreferrer"
-                          href={project.url}
-                        >
-                          Live Website <Icon name="external" size={16} />
-                        </a>
-                      )}
-                      <button
-                        className="button small secondary"
-                        onClick={() => setSelectedProject(project)}
-                      >
-                        View Details <Icon name="arrow" size={16} />
-                      </button>
-                    </div>
-                  </div>
-                </article>
-              ))}
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             </div>
           </div>
         </section>
@@ -973,7 +806,6 @@ export default function App() {
                   key={project.title}
                   href={project.url}
                   target="_blank"
-<<<<<<< HEAD
                   rel="noopener noreferrer"
                 >
                   <div className="small-project-inner">
@@ -995,31 +827,6 @@ export default function App() {
                         Visit website <Icon name="external" size={17} />
                       </div>
                     </div>
-=======
-                  rel="noreferrer"
-                >
-                  <div className={`site-preview preview-${index + 1}`}>
-                    <div className="preview-nav">
-                      <span />
-                      <i />
-                      <i />
-                      <i />
-                    </div>
-                    <div className="preview-copy">
-                      <small>{project.tag}</small>
-                      <b>{project.title}</b>
-                      <i />
-                    </div>
-                    <div className="preview-shape" />
-                  </div>
-                  <div className="small-project-copy">
-                    <span>{String(index + 1).padStart(2, "0")}</span>
-                    <div>
-                      <h3>{project.title}</h3>
-                      <p>{project.description}</p>
-                    </div>
-                    <Icon name="external" />
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                   </div>
                 </a>
               ))}
@@ -1045,17 +852,9 @@ export default function App() {
                 <article>
                   <span className="edu-dot" />
                   <div className="date">2022 — 2025</div>
-<<<<<<< HEAD
                   <h3>BBA-CA — Bachelor of Computer Applications</h3>
                   <p>MES Senior College, Pune</p>
                   <span className="degree-result">Completed · CGPA 7.2</span>
-=======
-                  <h3>Bachelor's Degree</h3>
-                  <p>MES Senior College, Pune</p>
-                  <span className="verify-status">
-                    Exact qualification title pending verification
-                  </span>
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                 </article>
               </div>
             </div>
@@ -1143,11 +942,7 @@ export default function App() {
                   <a
                     href="https://www.linkedin.com/in/nehachavan27/"
                     target="_blank"
-<<<<<<< HEAD
                     rel="noopener noreferrer"
-=======
-                    rel="noreferrer"
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                   >
                     <Icon name="linkedin" />
                     LinkedIn
@@ -1155,11 +950,7 @@ export default function App() {
                   <a
                     href="https://github.com/NEHA270104"
                     target="_blank"
-<<<<<<< HEAD
                     rel="noopener noreferrer"
-=======
-                    rel="noreferrer"
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
                   >
                     <Icon name="github" />
                     GitHub
@@ -1174,10 +965,6 @@ export default function App() {
       <footer>
         <div className="container footer-main">
           <div className="footer-brand">
-<<<<<<< HEAD
-=======
-            <Logo />
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             <div>
               <b>Neha Suresh Chavan</b>
               <span>AI & Full Stack Developer</span>
@@ -1198,64 +985,6 @@ export default function App() {
           <span>Designed with intention. Built with code.</span>
         </div>
       </footer>
-<<<<<<< HEAD
-=======
-
-      {selectedProject && (
-        <div
-          className="modal-backdrop"
-          role="presentation"
-          onMouseDown={() => setSelectedProject(null)}
-        >
-          <div
-            className="project-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-title"
-            onMouseDown={(event) => event.stopPropagation()}
-          >
-            <button
-              className="icon-button modal-close"
-              onClick={() => setSelectedProject(null)}
-              aria-label="Close project details"
-            >
-              <Icon name="x" />
-            </button>
-            <p className="project-category">{selectedProject.category}</p>
-            <h2 id="modal-title">{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
-            <h3>Key work</h3>
-            <ul>
-              {selectedProject.features.map((feature) => (
-                <li key={feature}>
-                  <span />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <div className="stack-list">
-              {selectedProject.stack.map((tech) => (
-                <span key={tech}>{tech}</span>
-              ))}
-            </div>
-            {selectedProject.url && (
-              <a
-                href={selectedProject.url}
-                target="_blank"
-                rel="noreferrer"
-                className="button primary"
-              >
-                Visit live website <Icon name="external" />
-              </a>
-            )}
-            <p className="modal-note">
-              Repository and demo links are only shown when a verified public
-              URL is available.
-            </p>
-          </div>
-        </div>
-      )}
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
     </div>
   )
 }

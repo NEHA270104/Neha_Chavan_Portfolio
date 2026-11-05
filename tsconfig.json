@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 "compilerOptions": {
 "target": "ES2020",
 "useDefineForClassFields": true,
@@ -20,26 +19,4 @@
 "noFallthroughCasesInSwitch": true
 },
 "include": ["src", "vite.config.ts"]
-=======
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-   "paths": {
-  "@/*": ["./src/*"]
-},
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["node"],
-    "strict": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src", "vite.config.ts"]
->>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
 }
