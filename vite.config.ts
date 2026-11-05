@@ -59,8 +59,11 @@ type FigmaSiteConfiguration = {
     icon?: string
   }
   openGraph?: {
+<<<<<<< HEAD
     title?: string
     description?: string
+=======
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
     image?: string
   }
   analytics?: {
@@ -96,6 +99,7 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
     return html.replace(`<!-- ${slotName} -->`, content)
   }
 
+<<<<<<< HEAD
   const title = config.title ?? "Neha Suresh Chavan | Portfolio"
   const description =
     config.description ??
@@ -107,6 +111,13 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
   const ogDescription =
     config.openGraph?.description ??
     "AI & Full Stack Developer building intelligent, scalable and secure web applications."
+=======
+  const title = config.title ?? "Figma Make App"
+  const description = config.description ?? ""
+  // Imported HTML keeps its own favicon; new Makes default to the Make product icon.
+  const favicon = config.icons?.icon ?? "/favicon.svg"
+  const socialImage = config.openGraph?.image ?? ""
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
   const language = sanitizeHtmlValue(config.language) || "en"
   const googleAnalyticsId = sanitizeHtmlValue(
     config.analytics?.googleAnalyticsId,
@@ -154,7 +165,11 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
         result = replaceHtmlCommentSlot(result, "figma:body-end", bodyEnd)
 
         const tags: HtmlTagDescriptor[] = []
+<<<<<<< HEAD
         if (description && !result.includes('name="description"')) {
+=======
+        if (description) {
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
           tags.push({
             tag: "meta",
             attrs: { name: "description", content: description },
@@ -168,13 +183,18 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
             injectTo: "head",
           })
         }
+<<<<<<< HEAD
         if (favicon && !result.includes('rel="icon"')) {
+=======
+        if (favicon) {
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
           tags.push({
             tag: "link",
             attrs: { rel: "icon", href: favicon },
             injectTo: "head",
           })
         }
+<<<<<<< HEAD
         if (ogTitle && !result.includes('property="og:title"')) {
           tags.push({
             tag: "meta",
@@ -186,6 +206,19 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
           tags.push({
             tag: "meta",
             attrs: { property: "og:description", content: ogDescription },
+=======
+        if (title) {
+          tags.push({
+            tag: "meta",
+            attrs: { property: "og:title", content: title },
+            injectTo: "head",
+          })
+        }
+        if (description) {
+          tags.push({
+            tag: "meta",
+            attrs: { property: "og:description", content: description },
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
             injectTo: "head",
           })
         }

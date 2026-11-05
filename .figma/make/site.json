@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "title": "Neha Suresh Chavan | Portfolio",
   "description": "Professional portfolio of Neha Suresh Chavan, AI & Full Stack Developer.",
   "openGraph": {
@@ -7,9 +8,18 @@
   },
   "robots": {
     "index": true
+=======
+  "description": "Explore Neha Suresh Chavan’s AI and full-stack development portfolio, showcasing professional experience, projects, technical skills, education, and contact options for recruiters and collaborators.",
+  "robots": {
+    "index": false
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913
   },
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe275f73c01e477731c017d39dc6463f0bbf4913

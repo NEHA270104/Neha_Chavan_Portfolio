@@ -1,0 +1,49 @@
+NEHA SURESH CHAVAN
+AI & Full Stack Developer
+Pune, Maharashtra, India
+
+CONTACT
+Email: neha.chavan2701@gmail.com
+Phone: +91 7058167104
+LinkedIn: https://www.linkedin.com/in/nehachavan27/
+GitHub: https://github.com/NEHA270104
+
+PROFILE
+AI & Full Stack Developer with practical experience developing modern web applications, REST APIs, databases, authentication and security features, and AI integrations. Focused on building scalable, secure, and useful digital products.
+
+EXPERIENCE
+AI Full Stack Developer Intern — BRTNeura Technologies
+September 2025 – Present | Remote
+- Develop frontend and backend functionality using React.js, TypeScript, JavaScript, Node.js and Python.
+- Build and integrate REST APIs with Express.js and FastAPI.
+- Work with PostgreSQL, MongoDB and database management.
+- Implement JWT authentication and application security controls.
+- Integrate Gemini APIs into AI-powered applications.
+- Contribute to EventReg and ExamAgent.
+- Test, debug, deploy and troubleshoot production applications.
+
+TECHNOLOGY
+Languages: Python, Java, JavaScript, TypeScript, SQL
+Frontend: React.js, HTML5, CSS3, Tailwind CSS, Bootstrap 5
+Backend: Node.js, Express.js, FastAPI, Flask, REST APIs, WebSockets
+Databases: PostgreSQL, MongoDB, MySQL, Supabase, ChromaDB, SQLAlchemy
+AI & Data: Gemini API, Pandas, NumPy, AI Integration, Vector Search, RAG
+Tools: Git, GitHub, Docker, Docker Compose, Netlify
+
+EDUCATION
+MSc Computer Applications
+Dr. D. Y. Patil Arts, Commerce and Science College | 2025 – 2027
+
+Bachelor's Degree — exact qualification title pending verification
+MES Senior College, Pune | 2022 – 2025
+
+CERTIFICATIONS
+Claude 101 — Anthropic, March 2026
+Java Masterclass — Udemy, January 2025
+Data Analyst Certification — TuteDude
+
+SELECTED PROJECTS
+EventReg Platform — Multi-tenant AI-powered event registration and management.
+ExamAgent — AI-powered examination and assessment workflows.
+Vrishabhanvi Ventures — Secure full-stack e-commerce platform.
+Real-Time Chat Application — Responsive WebSocket-based messaging.
